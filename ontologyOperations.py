@@ -10,5 +10,11 @@ q = prepareQuery('''SELECT ?o
                        WHERE {
                                  ?subject UC:cantUpdate ?object;
  UC:answer ?o.}''', initNs={'UC': UC})
-for row in graph.query(q):
-    print(row)
+
+results = graph.query(q)
+response = []
+for item in results:
+    o = str(item['o'].toPython())
+    o = re.sub(r'.*#', "", o)
+    response.append(o)
+    print(response)
