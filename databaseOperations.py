@@ -48,4 +48,20 @@ if(len(squares)>0):
          o = re.sub(r'.*#', "", o)
          response.append(o)
          print(response)
-else:print("none")
+else:
+    onto = get_ontology("file://E:/Academic/Final.owl").load()
+    graph = default_world.as_rdflib_graph()
+    c = 'cantFind'
+    UC = URIRef('http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#')
+    q = prepareQuery('''SELECT ?o
+                                 WHERE {
+                                           ?subject UC:''' + c + ''' ?object;
+           UC:answer ?o.}''', initNs={'UC': UC})
+
+    results = graph.query(q)
+    response = []
+    for item in results:
+        o = str(item['o'].toPython())
+        o = re.sub(r'.*#', "", o)
+        response.append(o)
+        print(response)
