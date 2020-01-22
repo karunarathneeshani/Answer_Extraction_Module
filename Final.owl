@@ -1,0 +1,1760 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY FinalProject "http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#"
+     xml:base="http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:FinalProject="http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#ChangePassword -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;ChangePassword">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;SignIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#acceptTripPrice -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;acceptTripPrice">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;RequestingRide"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#accessUber -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;accessUber">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;GeneralIssue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#addRating -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;addRating">
+        <rdfs:range rdf:resource="&FinalProject;ChangeAccountSettings"/>
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#availableUber -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;availableUber"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#cancleRide -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;cancleRide">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;RequestingRide"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#cantFind -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;cantFind">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;Other"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#cantRequestARide -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;cantRequestARide">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;RideRequest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#cantSignIn -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;cantSignIn">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;SignIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#cantUpdate -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;cantUpdate">
+        <rdfs:range rdf:resource="&FinalProject;Account"/>
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#changePickUpLocation -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;changePickUpLocation">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;RequestingRide"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#changeProfilePicture -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;changeProfilePicture">
+        <rdfs:range rdf:resource="&FinalProject;ChangeAccountSettings"/>
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#clearOutstandingPayment -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;clearOutstandingPayment">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;OutstandingPayment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#clearPayment -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;clearPayment">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;OutstandingPayment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#contactDriver -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;contactDriver">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;RequestingRide"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#contactTalkBackDriver -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;contactTalkBackDriver">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;TalkBack"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#contactVoiceOverDriver -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;contactVoiceOverDriver">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;VoiceOver"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#createAccount -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;createAccount">
+        <rdfs:range rdf:resource="&FinalProject;CreateAccount"/>
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#declinePayment -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;declinePayment">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;PaymentDecline"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#deleteAccount -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;deleteAccount">
+        <rdfs:range rdf:resource="&FinalProject;ChangeAccountSettings"/>
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#downloadIOSApp -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;downloadIOSApp">
+        <rdfs:range rdf:resource="&FinalProject;AppDownload"/>
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#downloadRiderApp -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;downloadRiderApp">
+        <rdfs:range rdf:resource="&FinalProject;AppDownload"/>
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#earnFreeRides -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;earnFreeRides">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;UsePromesAndCredits"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#editProfile -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;editProfile">
+        <rdfs:range rdf:resource="&FinalProject;ChangeAccountSettings"/>
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#estimatePrice -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;estimatePrice">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;RequestingRide"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#expirePromotion -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;expirePromotion">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;UsePromesAndCredits"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#forgotPassword -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;forgotPassword">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;SignInn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#inviteCode -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;inviteCode">
+        <rdfs:range rdf:resource="&FinalProject;ChangeAccountSettings"/>
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#involveAccident -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;involveAccident"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#knowRating -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;knowRating">
+        <rdfs:range rdf:resource="&FinalProject;ChangeAccountSettings"/>
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#nevigateTalkBack -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;nevigateTalkBack">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;TalkBack"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#nevigateVoiceOverManu -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;nevigateVoiceOverManu">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;VoiceOver"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#notReceivingNotifications -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;notReceivingNotifications">
+        <rdfs:range rdf:resource="&FinalProject;ChangeAccountSettings"/>
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#payWithCash -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;payWithCash">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;PaymentOptions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#payWithGooglePlay -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;payWithGooglePlay">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;PaymentOptions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#paymentError -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;paymentError">
+        <rdfs:range rdf:resource="&FinalProject;CreateAccount"/>
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#recieveVerificationCode -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;recieveVerificationCode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#requestDriver -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;requestDriver">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;RequestingRide"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#requestLongTrip -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;requestLongTrip">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;RequestingRide"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#requestMoreVehicle -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;requestMoreVehicle">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;RequestingRide"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#requestMultipleStops -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;requestMultipleStops">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;RequestingRide"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#requestRide -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;requestRide">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;RequestingRide"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#requestTalkBackRide -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;requestTalkBackRide">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;TalkBack"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#requestVoiceOverRide -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;requestVoiceOverRide">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;VoiceOver"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#resetPassword -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;resetPassword">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;PasswordReset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#resetPasswordLink -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;resetPasswordLink">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;PasswordResetLink"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#rideTips -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;rideTips">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;PaymentOptions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#rideWithPet -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;rideWithPet">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;RequestingRide"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#selectVehicleOption -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;selectVehicleOption">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;RequestingRide"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#shareLocation -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;shareLocation">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;RequestingRide"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#sheduleAdvanceRide -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;sheduleAdvanceRide">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;RequestingRide"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#signUpWithUber -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;signUpWithUber">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;SignUp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#troubleshootTwoStepVerification -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;troubleshootTwoStepVerification">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;Troubleshooting"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#turnOffTwoStepVerification -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;turnOffTwoStepVerification">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;TurnOff"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#turnOnTwoStepVerification -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;turnOnTwoStepVerification">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;TurnOn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#uberAge -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;uberAge">
+        <rdfs:range rdf:resource="&FinalProject;CreateAccount"/>
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#uberSignUp -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;uberSignUp">
+        <rdfs:range rdf:resource="&FinalProject;CreateAccount"/>
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#uberWorks -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;uberWorks">
+        <rdfs:range rdf:resource="&FinalProject;CreateAccount"/>
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#updateInfo -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;updateInfo">
+        <rdfs:range rdf:resource="&FinalProject;ChangeAccountSettings"/>
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#updatePaymentMethod -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;updatePaymentMethod">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;PaymentOptions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#updatePhoneEmail -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;updatePhoneEmail">
+        <rdfs:range rdf:resource="&FinalProject;ChangeAccountSettings"/>
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#updateSettings -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;updateSettings">
+        <rdfs:range rdf:resource="&FinalProject;ChangeAccountSettings"/>
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#updateShortcuts -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;updateShortcuts">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;RequestingRide"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#useBackupCode -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;useBackupCode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#useCredits -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;useCredits">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;UsePromesAndCredits"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#useFamilyProfiles -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;useFamilyProfiles">
+        <rdfs:range rdf:resource="&FinalProject;ChangeAccountSettings"/>
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#usePromotions -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;usePromotions">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;UsePromesAndCredits"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#useUber -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;useUber">
+        <rdfs:range rdf:resource="&FinalProject;CreateAccount"/>
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#useVoucher -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;useVoucher">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;PaymentOptions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#usedDetails -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;usedDetails">
+        <rdfs:range rdf:resource="&FinalProject;CreateAccount"/>
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#verifyTwoStep -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;verifyTwoStep"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#viewCredits -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;viewCredits">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;UsePromesAndCredits"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#voucherTips -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;voucherTips">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;PaymentOptions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#wrongOrders -->
+
+    <owl:ObjectProperty rdf:about="&FinalProject;wrongOrders">
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&FinalProject;RequestingRide"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#answer -->
+
+    <owl:DatatypeProperty rdf:about="&FinalProject;answer">
+        <rdfs:domain rdf:resource="&FinalProject;Account"/>
+        <rdfs:domain rdf:resource="&FinalProject;Customer"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#2StepVerification -->
+
+    <owl:Class rdf:about="&FinalProject;2StepVerification">
+        <rdfs:subClassOf rdf:resource="&FinalProject;Can&apos;tSignOrRequestRide"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#Accesability -->
+
+    <owl:Class rdf:about="&FinalProject;Accesability"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#Account -->
+
+    <owl:Class rdf:about="&FinalProject;Account"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#AccountAndPayment -->
+
+    <owl:Class rdf:about="&FinalProject;AccountAndPayment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#AfterRide -->
+
+    <owl:Class rdf:about="&FinalProject;AfterRide">
+        <rdfs:subClassOf rdf:resource="&FinalProject;Guide"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#AppDownload -->
+
+    <owl:Class rdf:about="&FinalProject;AppDownload">
+        <rdfs:subClassOf rdf:resource="&FinalProject;SigningUp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#BackupCode -->
+
+    <owl:Class rdf:about="&FinalProject;BackupCode">
+        <rdfs:subClassOf rdf:resource="&FinalProject;2StepVerification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#BusinessTravel -->
+
+    <owl:Class rdf:about="&FinalProject;BusinessTravel">
+        <rdfs:subClassOf rdf:resource="&FinalProject;AccountAndPayment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#Can&apos;tSignOrRequestRide -->
+
+    <owl:Class rdf:about="&FinalProject;Can&apos;tSignOrRequestRide">
+        <rdfs:subClassOf rdf:resource="&FinalProject;AccountAndPayment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#ChangeAccountSettings -->
+
+    <owl:Class rdf:about="&FinalProject;ChangeAccountSettings">
+        <rdfs:subClassOf rdf:resource="&FinalProject;AccountAndPayment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#CreateAccount -->
+
+    <owl:Class rdf:about="&FinalProject;CreateAccount">
+        <rdfs:subClassOf rdf:resource="&FinalProject;SigningUp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#Customer -->
+
+    <owl:Class rdf:about="&FinalProject;Customer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#Customers -->
+
+    <owl:Class rdf:about="&FinalProject;Customers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#Drivers -->
+
+    <owl:Class rdf:about="&FinalProject;Drivers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#GeneralIssue -->
+
+    <owl:Class rdf:about="&FinalProject;GeneralIssue">
+        <rdfs:subClassOf rdf:resource="&FinalProject;Accesability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#Guide -->
+
+    <owl:Class rdf:about="&FinalProject;Guide"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#LegalPolicyInquaries -->
+
+    <owl:Class rdf:about="&FinalProject;LegalPolicyInquaries">
+        <rdfs:subClassOf rdf:resource="&FinalProject;More"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#More -->
+
+    <owl:Class rdf:about="&FinalProject;More"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#Other -->
+
+    <owl:Class rdf:about="&FinalProject;Other"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#OutstandingPayment -->
+
+    <owl:Class rdf:about="&FinalProject;OutstandingPayment">
+        <rdfs:subClassOf rdf:resource="&FinalProject;Can&apos;tSignOrRequestRide"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#PasswordReset -->
+
+    <owl:Class rdf:about="&FinalProject;PasswordReset">
+        <rdfs:subClassOf rdf:resource="&FinalProject;Can&apos;tSignOrRequestRide"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#PasswordResetLink -->
+
+    <owl:Class rdf:about="&FinalProject;PasswordResetLink">
+        <rdfs:subClassOf rdf:resource="&FinalProject;Can&apos;tSignOrRequestRide"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#PaymentDecline -->
+
+    <owl:Class rdf:about="&FinalProject;PaymentDecline">
+        <rdfs:subClassOf rdf:resource="&FinalProject;Can&apos;tSignOrRequestRide"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#PaymentOptions -->
+
+    <owl:Class rdf:about="&FinalProject;PaymentOptions">
+        <rdfs:subClassOf rdf:resource="&FinalProject;AccountAndPayment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#RequestingRide -->
+
+    <owl:Class rdf:about="&FinalProject;RequestingRide">
+        <rdfs:subClassOf rdf:resource="&FinalProject;Guide"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#RideRequest -->
+
+    <owl:Class rdf:about="&FinalProject;RideRequest">
+        <rdfs:subClassOf rdf:resource="&FinalProject;Can&apos;tSignOrRequestRide"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#SignIn -->
+
+    <owl:Class rdf:about="&FinalProject;SignIn">
+        <rdfs:subClassOf rdf:resource="&FinalProject;Account"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#SignInn -->
+
+    <owl:Class rdf:about="&FinalProject;SignInn">
+        <rdfs:subClassOf rdf:resource="&FinalProject;Can&apos;tSignOrRequestRide"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#SignUp -->
+
+    <owl:Class rdf:about="&FinalProject;SignUp">
+        <rdfs:subClassOf rdf:resource="&FinalProject;SigningUp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#SigningUp -->
+
+    <owl:Class rdf:about="&FinalProject;SigningUp"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#TakingRide -->
+
+    <owl:Class rdf:about="&FinalProject;TakingRide">
+        <rdfs:subClassOf rdf:resource="&FinalProject;Guide"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#TalkBack -->
+
+    <owl:Class rdf:about="&FinalProject;TalkBack">
+        <rdfs:subClassOf rdf:resource="&FinalProject;Accesability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#Troubleshooting -->
+
+    <owl:Class rdf:about="&FinalProject;Troubleshooting">
+        <rdfs:subClassOf rdf:resource="&FinalProject;2StepVerification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#TurnOff -->
+
+    <owl:Class rdf:about="&FinalProject;TurnOff">
+        <rdfs:subClassOf rdf:resource="&FinalProject;2StepVerification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#TurnOn -->
+
+    <owl:Class rdf:about="&FinalProject;TurnOn">
+        <rdfs:subClassOf rdf:resource="&FinalProject;2StepVerification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#UberAtAirport -->
+
+    <owl:Class rdf:about="&FinalProject;UberAtAirport">
+        <rdfs:subClassOf rdf:resource="&FinalProject;More"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#UberForBusinessTravel -->
+
+    <owl:Class rdf:about="&FinalProject;UberForBusinessTravel">
+        <rdfs:subClassOf rdf:resource="&FinalProject;More"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#UberForDelivery -->
+
+    <owl:Class rdf:about="&FinalProject;UberForDelivery">
+        <rdfs:subClassOf rdf:resource="&FinalProject;More"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#UnknownCharge -->
+
+    <owl:Class rdf:about="&FinalProject;UnknownCharge">
+        <rdfs:subClassOf rdf:resource="&FinalProject;AccountAndPayment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#UsePromesAndCredits -->
+
+    <owl:Class rdf:about="&FinalProject;UsePromesAndCredits">
+        <rdfs:subClassOf rdf:resource="&FinalProject;AccountAndPayment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#VerificationMethod -->
+
+    <owl:Class rdf:about="&FinalProject;VerificationMethod">
+        <rdfs:subClassOf rdf:resource="&FinalProject;2StepVerification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#VoiceOver -->
+
+    <owl:Class rdf:about="&FinalProject;VoiceOver">
+        <rdfs:subClassOf rdf:resource="&FinalProject;Accesability"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#LocationShares -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;LocationShares">
+        <rdf:type rdf:resource="&FinalProject;Guide"/>
+        <answer>Riders can show their exact location to their drivers by turning on Live Location Sharing.This feature helps your driver locate you as you make your way to the pickup location. When your driver arrives at the pickup spot, they will see an extra icon on their map indicating where you are. Once your trip begins, your driver will no longer be able to see your location.</answer>
+        <shareLocation rdf:resource="&FinalProject;LocationShares"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#account -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;account">
+        <rdf:type rdf:resource="&FinalProject;SigningUp"/>
+        <answer>Creating an Uber account requires a valid email address and phone number. You&apos;ll also need to create a password and agree to terms and conditions and our privacy statement.Fill in your first and last name, phone number, and preferred language. Once you complete this part of the signup process, we send a text SMS to verify your phone number.
+Next, enter your payment information. Adding a credit card or debit card number allows your trip fares to be automatically charged after each ride. Please note that we cannot accept prepaid cards. After you provide this info, we&apos;ll send an email to confirm your account registration. Once you confirm, you&apos;ll be able to use your app to request a ride. </answer>
+        <createAccount rdf:resource="&FinalProject;account"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#accountDelete -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;accountDelete">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>DELETE YOUR ACCOUNT IN THE APP: 1. Go to the Settings section from your Uber app menu 2. Tap &quot;Privacy Settings&quot; 3. Tap &quot;Delete Account&quot; and follow the steps on the screen. If you delete your Uber account, it will be immediately deactivated. After 30 days, your account will be permanently deleted. Deleting your account will also permanently remove any credit, promotions, or rewards linked to your account. Please note that Uber may retain certain information after account deletion as required or permitted by law. If you decide to keep your account, you can restore it within 30 days of deactivation by signing into your Uber account.</answer>
+        <deleteAccount rdf:resource="&FinalProject;accountDelete"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#advanceRideShedule -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;advanceRideShedule">
+        <rdf:type rdf:resource="&FinalProject;Guide"/>
+        <answer>Uber now includes the option to schedule a ride 15 minutes to 30 days in advance using the Scheduled Rides feature. The Scheduled Rides feature allows you to select a 10 minute pickup window for a driver to come pick you up. A driver will be requested on your behalf before the start of your 10 minute window so that it arrives in the window and you&apos;re on your way to your destination. Scheduling a ride in advance does not guarantee you&apos;ll be connected with a driver. In the rare case a driver cannot be found, you&apos;ll be notified at the end of your selected time window.</answer>
+        <sheduleAdvanceRide rdf:resource="&FinalProject;advanceRideShedule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#alreadyUsed -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;alreadyUsed">
+        <rdf:type rdf:resource="&FinalProject;SigningUp"/>
+        <answer>If you are unable to sign up for a new account because your number is already registered, please fill out the form below.
+It&apos;s possible you&apos;ve already registered for an Uber account. We recommend that users have only one Uber account for both rides and UberEATS.To report an issue with your email id or phone number, we would need proof of mobile number ownership. You can follow the below-mentioned procedure to get the mobile number from your settings.
+</answer>
+        <usedDetails rdf:resource="&FinalProject;alreadyUsed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#appDownload -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;appDownload">
+        <rdf:type rdf:resource="&FinalProject;SigningUp"/>
+        <answer>You can download and install the Uber rider app on devices with iOS 8 and newer. Open the App Store on your mobile device, then follow the steps below.1. Tap &quot;Search&quot; in the menu bar at the bottom, then type &quot;Uber&quot; in the search bar2. Select &quot;Uber&quot; from the search results. 3.Next to the Uber icon, tap &quot;Get.&quot; You may be required to enter your Apple ID or password.4. When the download is complete, &quot;Get&quot; will change to &quot;Open.&quot; Tap &quot;Open&quot; to open the app.6. In the Uber app, tap &quot;Sign in&quot; if you have an account, or &quot;Register&quot; to create an account</answer>
+        <downloadIOSApp rdf:resource="&FinalProject;appDownload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#businessTips -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;businessTips">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>Whether you&apos;ll pay for tips on business rides depends on your company&apos;s expense policy. If your company covers the full cost of trips, any tips to drivers will be charged to the company account. If you were asked to add a second payment method when you joined your company&apos;s business account, the administrator on the account set rules around spending allowances. This means that ride payments will be charged to the company&apos;s account, but tips and ride payments that exceed the spending allowance will be charged to your personal payment method.NOTE: Tipping is not available in all countries.</answer>
+        <rideTips rdf:resource="&FinalProject;businessTips"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#cantRide -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;cantRide">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>If you can&apos;t request a ride, it could be for a few reasons:-You have an outstanding payment.-Your payment method was declined on a previous trip. -Uber is currently unavailable in your location.  -There aren&apos;t any drivers in your area at this time. Please wait and try requesting again.-You haven&apos;t confirmed your email or phone number. Check for verification messages from Uber. If you don&apos;t have any, you may need to update your account settings. </answer>
+        <cantRequestARide rdf:resource="&FinalProject;cantRide"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#cashPayment -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;cashPayment">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>Uber is designed to be an entirely cashless experience in most cities. When a trip ends, the payment method selected for your trip is immediately charged. A receipt is emailed to you, and your account&apos;s trip history is updated with details about the route and fare.Tipping is not required on Uber rides. Giving a driver a cash tip is left to your discretion.</answer>
+        <payWithCash rdf:resource="&FinalProject;cashPayment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#changepassword -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;changepassword">
+        <rdf:type rdf:resource="&FinalProject;SignIn"/>
+        <answer>Once you&apos;ve requested a link to reset your password, you should receive an email within a few minutes. The email contains the reset password link. To keep your account secure, the link expires after 10 minutes. If the link doesn&apos;t work or if you never received one, visit uber.com/forgot-password to request another link. Make sure you&apos;re entering your email correctly.</answer>
+        <ChangePassword rdf:resource="&FinalProject;changepassword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#clearOutstandingPayments -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;clearOutstandingPayments">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>If you lost or replaced your device, you will still be able to receive verification codes via text message to the same number.- Tap on the &quot;I&apos;m having trouble&quot; link on the screen where you are being prompted to enter a verification code- Select the &quot;Resend code via SMS&quot; option- Enter the 4-digit code sent to the phone number via text message- Enter your password to finish signing in. You can also use one of your backup codes to sign in if you are unable to receive your codes from a 3rd party security app or text message- Tap on the &quot;I&apos;m having trouble&quot; link on the screen where you are being prompted to enter a verification code
+</answer>
+        <clearOutstandingPayment rdf:resource="&FinalProject;clearOutstandingPayments"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#creditView -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;creditView">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>You can view your Uber credit balance by selecting &quot;Payment&quot; from the menu. Your credit amount is displayed in the currency the credit was issued in. Please note, Uber credit cannot be transferred from one currency into another. Uber credit will automatically apply by default to your next trip. Before or during a trip, you can select your preferred payment method and toggle your Uber credit on or off. When a trip ends, your selected payment method is charged. If Uber credit is toggled off, your default payment account is charged the full fare. If Uber credit is toggled on but less than your trip fare, the remainder of the fare is charged to your payment account. If you have a free ride on your account, this will automatically be your next trip. Free rides cannot be toggled off.</answer>
+        <viewCredits rdf:resource="&FinalProject;creditView"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#creditsPay -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;creditsPay">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>If you have credits on your account they will automatically apply to your next trip.</answer>
+        <useCredits rdf:resource="&FinalProject;creditsPay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#declinePayments -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;declinePayments">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>If you see any of the error messages below in your app, you won&apos;t be able to request a ride until you update your payment method:- &quot;Request Failed: Card Declined&quot;- &quot;Your payment method is invalid. Please update your billing settings&quot;- &quot;There was an error processing your request&quot; Update or add a new payment method in the &quot;Payment&quot; section of the app menu if your payment method was declined for one of the reasons below:- Card number entered is incorrect- Credit or debit card has expired- Insufficient funds in the account</answer>
+        <declinePayment rdf:resource="&FinalProject;declinePayments"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#determineRating -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;determineRating">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>After each trip, riders and drivers have the opportunity to rate one another from 1 to 5 stars, based on their trip experience. A driver or rider&apos;s overall rating is displayed as an average. For example, a highly-rated rider might have 4.9 stars. Ratings are anonymous. Neither riders nor drivers see individual ratings tied to a particular trip or person. Candid, constructive, and respectful feedback is beneficial for everyone. Providing a rating fosters mutual respect between riders and drivers. This strengthens our community and help everyone get the most from Uber. We appreciate your participation.
+</answer>
+        <addRating rdf:resource="&FinalProject;determineRating"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#driverContacts -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;driverContacts">
+        <rdf:type rdf:resource="&FinalProject;Guide"/>
+        <answer>If you wish to contact your driver about a pickup location or talk about other details of the ride you requested, you can do that through the app. To contact your driver:1. Tap the bar that displays the driver&apos;s info at the bottom of your screen. 2. Select &quot;Contact&quot; to choose between calling or messaging your driver. Note that drivers may not answer their phones or reply to a text message while driving.</answer>
+        <contactDriver rdf:resource="&FinalProject;driverContacts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#driverRequest -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;driverRequest">
+        <rdf:type rdf:resource="&FinalProject;Guide"/>
+        <answer>The Uber app cannot match you with a specific driver. When you request a ride, your app sends your request to nearby drivers to pick you up at your pickup location.</answer>
+        <requestDriver rdf:resource="&FinalProject;driverRequest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#errorPayment -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;errorPayment">
+        <rdf:type rdf:resource="&FinalProject;SigningUp"/>
+        <answer>If the CVV number or billing zip code for your credit or debit card is entered incorrectly, you may receive a message about an error processing your payment after a trip.Try removing the payment method, then add it again, making sure all info is correct.If you continue to receive messages about payment errors, contact your financial institution to verify that your payment account is active and verified internationally.</answer>
+        <paymentError rdf:resource="&FinalProject;errorPayment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#familyProfile -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;familyProfile">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>Create a Family Profile to be an account organizer for your family&apos;s Uber accounts. You can invite relatives to join and manage each person&apos;s default payment method. Each rider added to your Family Profile must meet Uber&apos;s terms of service. To obtain an account, riders must be at least 18 years of age or the age of legal majority in their local jurisdiction. CREATE A PROFILE AND INVITE FAMILY 1. Select &quot;Settings&quot; from your app menu 2. Scroll down to &quot;Profiles&quot; and tap the &quot;Add Family Profile&quot; bar 3. Select or add your default payment method
+4. Follow the steps to select and invite family members from your contact list</answer>
+        <useFamilyProfiles rdf:resource="&FinalProject;familyProfile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#faultsInOrders -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;faultsInOrders">
+        <rdf:type rdf:resource="&FinalProject;Guide"/>
+        <answer>If you received a text message saying you have a ride with Uber on the way, someone may have scheduled a ride on your behalf. Follow the instructions in the text message to accept the ride and view your pickup details.If you received a text with a link to request an Uber trip, a business ordered you a ride that you can request at any time on the scheduled day (before 11:59 pm). Tap the link in the text message when you&apos;re ready to request a ride.If you no longer need a ride or want to unsubscribe from messages, reply STOP.</answer>
+        <wrongOrders rdf:resource="&FinalProject;faultsInOrders"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#forgetpassword -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;forgetpassword">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>If you forget your password, use password reset link to reset. You&apos;ll need to enter the email address or mobile number associated with your Uber account.You&apos;ll receive an email in a few minutes. This email includes a link to reset your password. The link can only be used once. If you do not open the link within 10 minutes, start over to receive a new link. It&apos;s good practice to create a unique password for Uber. Be careful not to share your password in emails or other communication. Uber support will never ask you for your password.If you are unable to reset your password or access your account, please get in touch with us at Account and Payment &gt; Unable to Sign In &gt; &quot;My password reset link isn&apos;t working&quot;.</answer>
+        <forgotPassword rdf:resource="&FinalProject;forgetpassword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#freeRides -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;freeRides">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>Earn free rides by inviting friends to sign up and ride with Uber. To see your invite code, tap FREE RIDES in the app menu. When friends sign up with your invite code, their first ride will be free. Once a friend has ridden with Uber, your next ride in any city that shares your signup city&apos;s national currency will be free. You can share your code by tapping Invite Friends and selecting one of the options available. These include text, email, sharing on social media or copying your personal invite code. Personal invite codes should only be used for personal and non-commercial purposes. This means you can share your invite link with your personal connections via social media as long as you are the primary content owner.</answer>
+        <earnFreeRides rdf:resource="&FinalProject;freeRides"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#googlePay -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;googlePay">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>Riders with Android devices can use Google Pay as a payment method to sign up and pay for their Uber rides.To add Google Pay as a payment method:1. Select &quot;Wallet&quot; in the menu in your Uber app2. Tap &quot;Add Payment Method&quot;3. Tap &quot;Google Pay&quot;, then &quot;Enable&quot;4. Follow the prompts in your appTo remove Google Pay, follow the steps above and select &quot;Remove&quot;.NOTE: You cannot switch your payment method to Google Pay after a trip has ended</answer>
+        <payWithGooglePlay rdf:resource="&FinalProject;googlePay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#howUberWorks -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;howUberWorks">
+        <rdf:type rdf:resource="&FinalProject;SigningUp"/>
+        <answer>Uber is a technology platform. Our smartphone apps connect driver-partners and riders. In cities where Uber operates, use your rider app to request a ride. When a nearby driver-partner accepts your request, your app displays an estimated time of arrival for the driver-partner heading to your pickup location. Your app notifies you when the driver-partner is about to arrive. Your app also provides info about the driver-partner with whom you will ride, including first name, vehicle type, and license plate number. This info helps the two of you connect at your pickup location. Use your app to enter your preferred destination anytime before or during the ride. If you have a preferred route, it’s helpful to talk through the directions together.When you arrive at your destination and exit the vehicle, your trip ends. Your fare is automatically calculated and charged to the payment method you’ve linked to your Uber account. In some cities, Uber allows you to pay your fare in cash. This option must be selected before you request a ride. Immediately after a trip ends, your app will ask you to rate your driver from 1 to 5 Stars. Driver-partners are also asked to rate riders. Uber’s feedback system is designed to foster a community of respect and accountability for everyone.Learn more about how Uber works by exploring other Help Center topics. You can search for specific questions and answers too.</answer>
+        <uberWorks rdf:resource="&FinalProject;howUberWorks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#involveInAccident -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;involveInAccident">
+        <rdf:type rdf:resource="&FinalProject;Customer"/>
+        <answer>Uber is committed to the safety of everyone using our app. If you have been involved in an accident, please make sure that you and all parties involved are safe. Immediately notify police and paramedics if necessary.Please let us know what happened by sharing details that will help us to support you. We will get in touch.</answer>
+        <involveAccident rdf:resource="&FinalProject;involveInAccident"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#knowMyRatings -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;knowMyRatings">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>After each trip, riders and drivers are given the opportunity to rate one another based on their trip experience. The rating system works to make sure that the most respectful riders and drivers are using Uber. Ratings are always reported as averages, and neither riders nor drivers will see the individual rating left for a particular trip. To see your rating: 1. Open the app and touch the menu 2. Your rating is the number displayed under your name. You need to take 5 trips before you&apos;ll have a rider rating. If you don&apos;t see a rating, it is probably because you haven&apos;t taken enough trips.</answer>
+        <knowRating rdf:resource="&FinalProject;knowMyRatings"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#longTripRequest -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;longTripRequest">
+        <rdf:type rdf:resource="&FinalProject;Guide"/>
+        <answer>While Uber doesn&apos;t limit the distance you can travel on a trip, trips may automatically end after 4 hours. When this is about to happen, the driver is notified by the partner app. Please let drivers know if you&apos;re planning to travel a long distance. Many drivers need to make the return trip home after reaching your destination, and it&apos;s polite to give them a warning of a long trip. If you&apos;d like to continue after a trip automatically ends, please request a new ride. Since your previous driver is nearby, they may receive this new trip request.</answer>
+        <requestLongTrip rdf:resource="&FinalProject;longTripRequest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#minAge -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;minAge">
+        <answer>you must be 18 years of age or older.</answer>
+        <uberAge rdf:resource="&FinalProject;minAge"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#moreVehicleRequest -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;moreVehicleRequest">
+        <rdf:type rdf:resource="&FinalProject;Guide"/>
+        <answer>Using your rider account, you may only request one vehicle at a time. You can request another vehicle immediately after a current trip ends. In many cities, Uber offers larger vehicle options like UberXL and UberSUV. These vehicle options accommodate 6 or more riders. If you&apos;re requesting a ride for a large group, it&apos;s a good idea to contact the driver who accepts your ride request. Confirm that the vehicle has enough seats and seat belts for everyone. If you want to ride in a group too large for a single vehicle, please ask others in your group to use their Uber accounts to request additional vehicles. Riding with a large group is a great opportunity to invite friends to create their own Uber accounts. Select &quot;Free Rides&quot; from your app menu to get started. When invited friends take a first ride, you&apos;ll receive a referral reward.
+</answer>
+        <requestMoreVehicle rdf:resource="&FinalProject;moreVehicleRequest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#multipleStopRequests -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;multipleStopRequests">
+        <rdf:type rdf:resource="&FinalProject;Guide"/>
+        <answer>You can request that your driver make multiple stops when requesting a ride. Here&apos;s how:1. Open the Uber app and tap the &quot;Where To?&quot; box 2. Tap &quot;+ Add multiple stops&quot; to add up to 2 additional stops. 3. Tap &quot;DONE&quot; to continue. Stops will be made in the order they&apos;re added. To remove a stop, tap the &quot;X&quot; next to it. Remember to keep each stop under 3 minutes. If you&apos;re splitting your fare, it will be split for the entire ride, not split by the cost to each stop.
+</answer>
+        <requestMultipleStops rdf:resource="&FinalProject;multipleStopRequests"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#notMatch -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;notMatch">
+        <rdf:type rdf:resource="&FinalProject;Other"/>
+        <answer>This is computer generate answer. I can&apos;t find the best answer for your situation. Plase contact our customer care center directly. Sorry for the inconvienent made</answer>
+        <cantFind rdf:resource="&FinalProject;notMatch"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#outstandingPayment -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;outstandingPayment">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>If a charge from Uber is declined, you may see a &quot;Payment&quot; card in your Uber feed. Your app will ask you to charge your outstanding balance to a payment method of your choice before requesting a ride. To pay an outstanding balance: 1. Tap the card on your feed. 2. Select &quot;View Payment options.&quot; Select payment type. Note: You may need to update your payment method(s). You can also choose to pay cash for the balance on your next cash ride. To pay cash, select &quot;Pay in cash to next driver&quot; and then &quot;Confirm.&quot; Your outstanding balance will be added to your next trip fare.</answer>
+        <clearPayment rdf:resource="&FinalProject;outstandingPayment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#passwordResetLink -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;passwordResetLink">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>Once you&apos;ve requested a link to reset your password, you should receive an email within a few minutes.The email contains the reset password link. To keep your account secure, the link expires after 10 minutes.If the link doesn&apos;t work or if you never received one, visit uber.com/forgot-password to request another link. Make sure you&apos;re entering your email correctly.If you&apos;re unable to reset your password or access your account, fill out the form below.</answer>
+        <resetPasswordLink rdf:resource="&FinalProject;passwordResetLink"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#petRides -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;petRides">
+        <rdf:type rdf:resource="&FinalProject;Guide"/>
+        <answer>In accordance with local and federal laws in your area, service animals are permitted to accompany riders at all times. If you&apos;re planning to ride with a non-service pet, it&apos;s good practice to contact the driver who accepts your ride request. Use your app to send a text message or call to let the driver know you&apos;d like to bring a pet. Please help drivers keep vehicles clean for all riders by bringing a crate or blanket to reduce the risk of damage or mess. Some drivers may keep a blanket in the trunk.</answer>
+        <rideWithPet rdf:resource="&FinalProject;petRides"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#pickUpLocationChanges -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;pickUpLocationChanges">
+        <rdf:type rdf:resource="&FinalProject;Guide"/>
+        <answer>When you request a ride, the app uses GPS to suggest the best pickup location nearby. If you need a different pickup location: 1. Tap on the pickup location label on the map. 2. Enter a new address or building 3. Choose from one of the locations suggested by the app. You can also change your pickup location after you request a ride. To do this: 1. Tap &quot;Edit&quot; next to your pickup location. 2. Type a new address or drag your pin to any location on the map within the grey circle. 3. Tap the &quot;Confirm&quot; button to complete your request. You&apos;ll only be able to adjust your pickup location one time, and it can only be moved within the circle that&apos;s shown on your screen.</answer>
+        <changePickUpLocation rdf:resource="&FinalProject;pickUpLocationChanges"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#priceEstimate -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;priceEstimate">
+        <rdf:type rdf:resource="&FinalProject;Guide"/>
+        <answer>You can get a fare estimate in the rider app by following these steps: 1. Enter your destination address in the &quot;Where to?&quot; box 2. Your default pickup point is set to your current GPS location. If you are not being picked up at your current location, tap your pickup location on the map and update the address. 3. Use the slider at the bottom of your screen to toggle between available vehicle options (for example, uberX or UberBLACK). 4. Fare estimates are displayed directly below each vehicle option. If dynamic pricing is currently in effect at your pickup location, it will be included in the estimated fare amount. These estimates do not include any promotions that are active on your account. Please keep in mind that traffic, weather, or any factors that extend the distance or duration of your ride can contribute to a difference between your estimated and actual fare. You can also visit the link below to get a fare estimate for any city around the world where Uber is available.</answer>
+        <estimatePrice rdf:resource="&FinalProject;priceEstimate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#profileEdits -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;profileEdits">
+        <answer>To edit a ride profile:1. Open your Uber app and tap the menu icon at the top left 2. Select &quot;Wallet&quot; and scroll down to &quot;Ride Profiles&quot; 3. Tap the profile you&apos;d like to update, then tap the item you wish to edit. On business profiles that you created, you can edit the: - Profile name - Associated email - Default payment method - Travel report frequency - Expense provider. NOTE: On business profiles managed by your company, you can only edit the default payment method or travel report frequency. All other changes must be made by the account administrator.</answer>
+        <editProfile rdf:resource="&FinalProject;profileEdits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#profilePicture -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;profilePicture">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>To change or add a profile picture, tap your photo or the blank circle in the menu section of your app. IF YOU HAVE A DRIVER ACCOUNT
+Riders with an Uber driver-partner account must go through their driver app to change their profile photo. This applies if you ever created a driver account, even if it was never activated. Your profile photo must be approved before it appears on your account. The approval typically takes 2 hours. Once approved, your photo updates on both your rider and driver-partner accounts.</answer>
+        <changeProfilePicture rdf:resource="&FinalProject;profilePicture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#promotionExpire -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;promotionExpire">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>If a promo code has an expiration date, it will not work after that date has passed. Promo codes cannot be extended or renewed. You can check which promo codes are currently applied to your account. To review details for all promo codes currently applied to your account, select &quot;Payment&quot; from your app menu, then tap &quot;Promotions&quot;.</answer>
+        <expirePromotion rdf:resource="&FinalProject;promotionExpire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#promotions -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;promotions">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>Uber offers special promotions to provide discounts on rides to riders. To apply a promotional discount to a trip&apos;s fare, enter the promo code anytime before your trip begins. Here&apos;s how: 1. Select &quot;Payment&quot; from your app menu. 2. Scroll down to Promotions. 3. Tap Add Promo Code/Gift Code. 4. Enter the code and tap ADD.</answer>
+        <usePromotions rdf:resource="&FinalProject;promotions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#receiptsOrEmail -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;receiptsOrEmail">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>If you aren&apos;t receiving ride receipts or emails from Uber, first check your spam or junk folders. Make sure to mark emails from Uber as &quot;not junk&quot; so you receive them in the future. If you can&apos;t find Uber emails, try updating your email in the app: 1. Open your Uber app menu and tap &quot;Settings&quot; 2. Tap your name at the top of the menu 3. Select your email to update it (if necessary) 4. Tap &quot;Save&quot;. You can also view trip receipts in the app or on the web</answer>
+        <notReceivingNotifications rdf:resource="&FinalProject;receiptsOrEmail"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#resetMyPassword -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;resetMyPassword">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>If you forget your password, visit the link below to reset. You&apos;ll need to enter the email address or mobile number associated with your Uber account.You&apos;ll receive an email in a few minutes. This email includes a link to reset your password. The link can only be used once. If you do not open the link within 10 minutes, start over to receive a new link. It&apos;s good practice to create a unique password for Uber. Be careful not to share your password in emails or other communication. Uber support will never ask you for your password.If you are unable to reset your password or access your account, please get in touch with us at Account and Payment &gt; Unable to Sign In &gt; &quot;My password reset link isn&apos;t working&quot;.</answer>
+        <resetPassword rdf:resource="&FinalProject;resetMyPassword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#rideCancels -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;rideCancels">
+        <rdf:type rdf:resource="&FinalProject;Guide"/>
+        <answer>You can cancel a trip at any time, before or after a driver has accepted your trip request. If you cancel when the driver is less than 5 minutes away from picking you up, you will be charged a cancellation fee.To cancel before a driver accepts your trip request: 1. Tap the white info bar at the bottom of your screen. 2. Tap CANCEL TRIP. 3. You&apos;ll be asked to confirm. Tap YES or NO. To cancel after a driver accepts your trip request: 1. Swipe up from the bottom of your screen. 2. Tap CANCEL, then CONFIRM.</answer>
+        <cancleRide rdf:resource="&FinalProject;rideCancels"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#rideRequest -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;rideRequest">
+        <rdf:type rdf:resource="&FinalProject;Guide"/>
+        <answer>1. Enter your destination address in the &quot;Where to?&quot; box, or tap a shortcut icon at the bottom of your screen. Shortcuts include recent destinations from your ride history or custom &quot;Saved Places&quot; you can set in your app. 2. Your default pickup point is set to your current GPS location. If you are not being picked up at your current location, tap your pickup location on the map and update the address. 3. Use the slider at the bottom of your screen to toggle between available vehicle options (for example, uberX or UberBLACK). 4. Tap &quot;Request.&quot; You may be asked to confirm your pickup location. 5. Wait for a driver to accept your request. 6. When your request has been accepted, you&apos;ll see your driver&apos;s location on your map and an estimated time of arrival at your pickup location. 7. Your app will notify you when your driver is close to your pickup location. In some cities, you can also request a ride to more than one destination.</answer>
+        <requestRide rdf:resource="&FinalProject;rideRequest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#riderAppDownload -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;riderAppDownload">
+        <rdf:type rdf:resource="&FinalProject;SigningUp"/>
+        <answer>You can download and install the Uber rider app on Android devices with operating system 4.0.3 and newer. Head to the Google Play store and follow these steps:1. Tap the Google Play icon.2. Tap the search bar, type Uber, then tap Search.3. Select the Uber icon and tap INSTALL.4. After app installation is complete, tap OPEN.5. In the Uber app, tap SIGN IN if you have an account or tap REGISTER to create one.</answer>
+        <downloadRiderApp rdf:resource="&FinalProject;riderAppDownload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#riderSignUp -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;riderSignUp">
+        <rdf:type rdf:resource="&FinalProject;SigningUp"/>
+        <answer>If you are having trouble, first make sure that you have upgraded to the latest version of the app. Let us know about any other issues you&apos;re having with signing up.</answer>
+        <uberSignUp rdf:resource="&FinalProject;riderSignUp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#settingUpdates -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;settingUpdates">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>UNSUBSCRIBE FROM EMAIL OR SMS NOTIFICATIONS. To manage your email, SMS, or push communications from Uber, visit the page below for instructions. NOTE: You cannot unsubscribe from transactional messages, including trip receipts and support responses. These communications are important for your experience.</answer>
+        <updateSettings rdf:resource="&FinalProject;settingUpdates"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#shortcutsUpdates -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;shortcutsUpdates">
+        <rdf:type rdf:resource="&FinalProject;Guide"/>
+        <answer>Starting May 2018, the Uber app will no longer support the Calendar Shortcuts feature. Your calendar account will be unlinked, and all calendar-related information will be deleted from the Uber app and servers.Calendar Shortcuts allowed users to link their personal or work calendars with Uber. Once a calendar was connected, upcoming events from the calendar would appear as a &quot;shortcut&quot; when a user opened the Uber app.</answer>
+        <updateShortcuts rdf:resource="&FinalProject;shortcutsUpdates"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#talkBackDriver -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;talkBackDriver">
+        <rdf:type rdf:resource="&FinalProject;Accesability"/>
+        <answer>The options to call or message your driver appear in the white bar at the bottom of your screen once you&apos;ve been matched.There is a phone icon and a message input box in the white bar where driver&apos;s name and vehicle information appear.To call your driver:1. Single tap, then double tap the round phone icon under your driver&apos;s information. 2. Single tap, then double tap the phone number or the &quot;FREE CALL&quot; button3. Your phone will automatically call your driver according to the option you choseTo message your driver:1. Single tap, then double tap the text field under your driver&apos;s information2. Type or speak your message3. Single tap, then double tap the &quot;SEND&quot; button</answer>
+        <contactTalkBackDriver rdf:resource="&FinalProject;talkBackDriver"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#talkBackNevigate -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;talkBackNevigate">
+        <rdf:type rdf:resource="&FinalProject;Accesability"/>
+        <answer>To navigate the Uber app menu with TalkBack, open your app and double tap the top left of your screen to open the menu. The following options appear from top to bottom:Your trips - This section lists your past rides, or you can see upcoming, scheduled rides. Use two fingers to swipe through your ride history. Select one to get help with a trip, submit feedback, or view a trip receipt.Payment - in this section you can add or update a payment methodHelp - search through articles to answer your questions about Uber. You can also submit feedback about accessibility features in this sectionFree rides - use the personal Invite code stored in this section to invite others to use Uber. Settings - Update your contact information, set favorite locations like home or work, or add contacts to quickly share your location with before or during a trip</answer>
+        <nevigateTalkBack rdf:resource="&FinalProject;talkBackNevigate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#talkBackRideRequest -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;talkBackRideRequest">
+        <rdf:type rdf:resource="&FinalProject;Accesability"/>
+        <answer>Here&apos;s how to request a ride with TalkBack turned on:1. Single tap, then double tap the &quot;Where to?&quot; box. Enter a destination, or select from a list of suggested destinations.2. Your pickup location is automatically set to your GPS location. To change it, tap your pickup location, then double tap it to edit your location.3. Use two fingers to swipe through the vehicle options available in your area. Single tap, then double tap one to select it for your ride.4. Single tap, then double tap the &quot;CONFIRM PICKUP&quot; button at the bottom of your screen to request your ride. 5. You&apos;ll receive a notification when your driver has arrived. The message will be read aloud.6. Single tap, then double tap the bar at the bottom of your screen to access the following options:- Contact your driver - Single tap, then double tap the round phone icon call your driver&apos;s phone number or place a free call- Cancel your ride - Single tap, then double tap the &quot;Cancel&quot; button, then single tap, then double tap the &quot;Yes, cancel&quot; button to confirm.- Share you status - Single tap, then double tap the &quot;Share Status&quot; button, then select people from your list of contacts. Uber texts a link to those contacts to track your ride.- Split the fare - Single tap, then double tap the &quot;Split Fare&quot; button and select a contact</answer>
+        <requestTalkBackRide rdf:resource="&FinalProject;talkBackRideRequest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#tipsOnVouchers -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;tipsOnVouchers">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>Vouchers from businesses cover the entire or partial cost of the trip price, but don&apos;t cover tips to drivers. If you decide to tip a driver on a ride that was paid for with a voucher, the tip will be charged to your personal payment method. NOTE: Tipping is not available in all countries.</answer>
+        <voucherTips rdf:resource="&FinalProject;tipsOnVouchers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#tripPriceAcceptance -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;tripPriceAcceptance">
+        <rdf:type rdf:resource="&FinalProject;Guide"/>
+        <answer>Depending on the city where you&apos;re using Uber, your app may display fares for each available vehicle option when you&apos;ve selected a destination. Trip fares are based on factors that include estimated time and distance to your destination. Fees and surcharges are also included. The fare you are actually charged may increase if your trip takes longer than expected. Extra stops on a trip, changing the destination, or making a driver wait several minutes at your pickup location can also add to your fare.</answer>
+        <acceptTripPrice rdf:resource="&FinalProject;tripPriceAcceptance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#twoStepVerificationOff -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;twoStepVerificationOff">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>- Go to Security Settings in the Uber app by tapping on the menu icon in the top-left corner and clicking Settings &gt; Security- Tap on 2-step verification- Tap on the &quot;TURN OFF&quot; button at the bottom of the screen - You will be asked to enter your password and verify your identity for security purposes before you are able to turn it off</answer>
+        <turnOffTwoStepVerification rdf:resource="&FinalProject;twoStepVerificationOff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#twoStepVerificationOn -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;twoStepVerificationOn">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>To turn 2-step verification ON:- Go to Security Settings in the Uber app by tapping on the menu icon in the top-left corner and clicking Settings&gt; Security- Tap on 2-step verification- Select your preferred method of verification (text message or 3rd party security app) and follow the on-screen instructions. If you are setting up 2-step verification using an authentication app, you&apos;ll need to download your preferred app first. We recommend using Duo Mobile or Google Authenticator.</answer>
+        <turnOnTwoStepVerification rdf:resource="&FinalProject;twoStepVerificationOn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#twoStepVerificationTroubleshooting -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;twoStepVerificationTroubleshooting">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>1. I still have the same phone number, but am using a new device. How do I verify?If you lost or replaced your device, you will still be able to receive verification codes via text message to the same number.- Tap on the &quot;I&apos;m having trouble&quot; link on the screen where you are being prompted to enter a verification code- Select the &quot;Resend code via SMS&quot; option- Enter the 4-digit code sent to the phone number via text message- Enter your password to finish signing in. You can also use one of your backup codes to sign in if you are unable to receive your codes from a 3rd party security app or text message. - Tap on the &quot;I&apos;m having trouble&quot; link on the screen where you are being prompted to enter a verification code- Select the &quot;Use 8-digit backup code&quot; option- Use one of your saved backup codes (that has not been used previously)2. I&apos;m not receiving text message verificationsFirst check to see if your phone number was entered correctly. Try editing your phone number and tap &quot;Resend&quot; on the verification screen to ask for a new code.It&apos;s also possible that your mobile carrier may be blocking the short code SMS that Uber uses to contact you. Please contact your mobile provider to confirm that short code SMS is enabled for your mobile account.If you still haven&apos;t received a verification SMS after checking both of these, please click the link &quot;I&apos;m not receiving mobile verification texts&quot; at the bottom of the page.3. I want to switch between text message and a security app for 2-step verificationPlease follow the below steps:- Tap on &apos;Settings&apos;- Tap on &apos;Security&apos;- Toggle &apos;On/Off&apos; th&apos;2-step verification&apos;- Once you toggle &apos;On&apos;, you will have an option to edit the Delivery settings&apos;- Tap on &apos;Edit&apos; next to &apos;Delivery settings&apos; to choose the delivery method4. I can&apos;t remember which security app I used to set up 2-step verificationPlease check your device to see if any security apps are already installed. You can open them to check if the Uber app had been previously connected.If you no longer have any security apps installed on your device, here are some commonly used apps that you may have used to set up 2-step verification:- Duo Mobile- Google Authenticator- Authy- LastPass When you choose a security app as your preferred method of generating verification codes, you will not receive text messages. A code generated by your security app will help you sign in.</answer>
+        <troubleshootTwoStepVerification rdf:resource="&FinalProject;twoStepVerificationTroubleshooting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#uberAccess -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;uberAccess">
+        <rdf:type rdf:resource="&FinalProject;Accesability"/>
+        <answer>State and federal laws prohibit discrimination against individuals with disabilities, including those accompanied by service animals. Partners using the Uber app agree to follow all applicable laws and Uber&apos;s policies, which state that partners may not deny service to or otherwise discriminate against riders with disabilities.Any report of unlawful discrimination or ride refusal may result in temporarily deactivating a driver&apos;s account while we review the incident. Additionally, partners are expected to assist riders using walkers, canes, folding wheelchairs, or other assistive devices to the maximum extent possible.</answer>
+        <accessUber rdf:resource="&FinalProject;uberAccess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#uberAvailability -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;uberAvailability">
+        <rdf:type rdf:resource="&FinalProject;Guide"/>
+        <answer>Uber is available in many cities around the world. With an Uber account, you can request a ride in any city where Uber operates, 24 hours a day, 7 days a week.</answer>
+        <availableUber rdf:resource="&FinalProject;uberAvailability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#uberSignUp -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;uberSignUp">
+        <rdf:type rdf:resource="&FinalProject;SigningUp"/>
+        <answer>You can sign up to drive with your rider app.Download the driver app from the link below. As a driver-partner, you&apos;ll receive ride requests with your driver app.Driving your own vehicle, you&apos;ll meet riders at their pickup locations and drive them to their destinations around the city.Your driver app also keeps track of your trip fares. Uber facilitates payment of your earnings to your bank account.</answer>
+        <signUpWithUber rdf:resource="&FinalProject;uberSignUp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#uberWithoutPhone -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;uberWithoutPhone">
+        <rdf:type rdf:resource="&FinalProject;SigningUp"/>
+        <answer>The Uber app is made for use on smartphones.If you don&apos;t have a smartphone, you can still login to your account and request a ride by visiting our mobile website, m.uber.com.</answer>
+        <useUber rdf:resource="&FinalProject;uberWithoutPhone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#updateAccount -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;updateAccount">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>To update your name, email, phone number, or password for your Uber rider account:1. Open the app menu and tap &quot;Settings&quot; 2. Tap the bar that displays your name, phone number, and email 3. Tap the detail you want to change and enter the updated information 4. Make your updates and click &quot;Save&quot;</answer>
+        <updateInfo rdf:resource="&FinalProject;updateAccount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#updateEmailPhone -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;updateEmailPhone">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>If you&apos;re getting an error message when attempting to update your mobile phone number or email address, or if you&apos;re not receiving the verification code, let us know here. It&apos;s always recommended to check the spelling of your email and make sure you&apos;ve entered your new phone number correctly.</answer>
+        <updatePhoneEmail rdf:resource="&FinalProject;updateEmailPhone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#updatePayment -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;updatePayment">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>Adding and selecting a preferred payment method will allow you to request a ride. Depending on your country and city, you can add payment methods such as credit cards, cash, or a PayPal account. When a ride ends, your selected payment method is charged. During a ride, use your app to check that your preferred payment method is selected. Swipe up from the bottom of the app and tap your desired payment method before the trip ends.</answer>
+        <updatePaymentMethod rdf:resource="&FinalProject;updatePayment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#updateaccount -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;updateaccount">
+        <rdf:type rdf:resource="&FinalProject;SignIn"/>
+        <answer>To update your name, email, phone number, or password for your Uber rider account:1. Open the app menu and tap &quot;Settings&quot;2. Tap the bar that displays your name, phone number, and email 3. Tap the detail you want to change and enter the updated information4. Make your updates and click save
+</answer>
+        <cantUpdate rdf:resource="&FinalProject;updateaccount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#useInviteCode -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;useInviteCode">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>Uber provides every rider with a unique invite code. It is generated automatically and cannot be changed. Access your code by tapping &quot;Free Rides&quot; in the settings section of the app. Share your invite code with friends to get free rides when they take their first ride with Uber!</answer>
+        <inviteCode rdf:resource="&FinalProject;useInviteCode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#useVouchers -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;useVouchers">
+        <rdf:type rdf:resource="&FinalProject;AccountAndPayment"/>
+        <answer>If you&apos;re having issues using a voucher (admins and coordinators creating voucher programs can find help at uberforbusinesshelp.com), double check that you&apos;ve done the following:- Claimed the voucher. Click the link in the email you received to redeem your voucher and add it to your account.- Requested a qualifying ride. Check the details of thevoucher through the original &quot;Accept Voucher&quot; link.- Used your personal ride profile. Vouchers don&apos;t work on a business profile.- Have the latest version of the Uber app. Update your app or uninstall then reinstall it from the App Store or Google Play Store. If your app is updated, try force stopping and restarting the app.</answer>
+        <useVoucher rdf:resource="&FinalProject;useVouchers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#vehicleOptions -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;vehicleOptions">
+        <rdf:type rdf:resource="&FinalProject;Guide"/>
+        <answer>We&apos;re currently launching a redesigned rider app in cities around the world. Read on to learn how to select a vehicle option using either the new or old rider app.</answer>
+        <selectVehicleOption rdf:resource="&FinalProject;vehicleOptions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#voiceOverDriver -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;voiceOverDriver">
+        <rdf:type rdf:resource="&FinalProject;Accesability"/>
+        <answer>The options to call or message your driver appear in the white bar at the bottom of your screen once you&apos;ve been matched.There is a phone icon and a message input box in the white bar where driver&apos;s name and vehicle information appear.To call your driver:1. Single tap, then double tap the round phone icon under your driver&apos;s information 2. Single tap, then double tap the phone number or the &quot;FREE CALL&quot; button. 3. Your phone will automatically call your driver according to the option you chose. To message your driver:1. Single tap, then double tap the text field under your driver&apos;s information. 2. Type or speak your message. 3. Single tap, then double tap the &quot;SEND&quot; button</answer>
+        <contactVoiceOverDriver rdf:resource="&FinalProject;voiceOverDriver"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#voiceOverManu -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;voiceOverManu">
+        <rdf:type rdf:resource="&FinalProject;Accesability"/>
+        <answer>To navigate the Uber app menu with VoiceOver, open your app and double tap the top left of your screen to open the menu. The following options appear from top to bottom: Your trips - this section lists your past rides, or you can see upcoming, scheduled rides. Use three fingers to swipe through your ride history. Select one to get help with a trip, submit feedback, or view a trip receipt.Wallet - in this section you can add or update a payment method. Help - search through articles to answer your questions about Uber. You can also submit feedback about accessibility features in this section. Free rides - use the personal Invite code stored in this section to invite others to use Uber
+Settings - update your contact information, set favorite locations like home or work, or add contacts to quickly share your location with before or during a trip
+
+</answer>
+        <nevigateVoiceOverManu rdf:resource="&FinalProject;voiceOverManu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2019/8/FinalProject#voiceOverRide -->
+
+    <owl:NamedIndividual rdf:about="&FinalProject;voiceOverRide">
+        <rdf:type rdf:resource="&FinalProject;Accesability"/>
+        <answer>Here&apos;s how to request a ride with VoiceOver turned on:1. Single tap, then double tap the &quot;Where to?&quot; box. Enter a destination, or select from a list of suggested destinations.2. Your pickup location is automatically set to your GPS location. To change it, tap your pickup location, then double tap it to edit your location.3. Use three fingers to swipe through the vehicle options available in your area. Single tap, then double tap one to select it for your ride.4. Single tap, then double tap the &quot;CONFIRM PICKUP&quot; button at the bottom of your screen to request your ride5. You&apos;ll receive a notification when your driver has arrived. The message will be read aloud.6. Single tap, then double tap the bar at the bottom of your screen to access the following options:- Contact your driver - single tap, then double tap the round phone icon call your driver&apos;s phone number or place a free call- Cancel your ride - single tap, then double tap the &quot;Cancel&quot; button, then single tap, then double tap the &quot;Yes, cancel&quot; button to confirm.- Share you status - single tap, then double tap the &quot;Share Status&quot; button, then select people from your list of contacts. Uber texts a link to those contacts to track your ride.- Split the fare - single tap, then double tap the &quot;Split Fare&quot; button and select a contact
+
+</answer>
+        <requestVoiceOverRide rdf:resource="&FinalProject;voiceOverRide"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
